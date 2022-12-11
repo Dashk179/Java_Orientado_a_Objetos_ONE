@@ -2,11 +2,11 @@ public class CrearCuenta {
 
     public static void main(String[] args) {
 
-        Cuenta primeracuenta  = new Cuenta();
+        Cuenta primeracuenta  = new Cuenta(1);
      //   primeracuenta.saldo = 50;
      //   System.out.println(primeracuenta.saldo);
 
-        Cuenta segundaCuenta = new Cuenta();
+        Cuenta segundaCuenta = new Cuenta(2);
      //   segundaCuenta.saldo = 50;
      //   System.out.println(segundaCuenta.saldo);
 

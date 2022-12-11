@@ -1,7 +1,7 @@
 public class PruebaMetodos {
 
     public static void main(String[] args) {
-        Cuenta  cuentaArturo  = new Cuenta();
+        Cuenta  cuentaArturo  = new Cuenta(1);
 
         cuentaArturo.depositar(500);
       System.out.println(cuentaArturo.getSaldo());
@@ -10,7 +10,7 @@ public class PruebaMetodos {
         cuentaArturo.retirar(300);
        System.out.println(cuentaArturo.getSaldo());
 
-        Cuenta cuentaJosue  = new Cuenta();
+        Cuenta cuentaJosue  = new Cuenta(4);
         cuentaJosue.depositar(500);
         boolean puedeTransferir  = cuentaJosue.transferir(400,cuentaArturo);//Este metodo aplica a ser un booleano ya que debo de trabajar con el valor retornado. (Retornar el valor de transferenacia exitosa)
 
