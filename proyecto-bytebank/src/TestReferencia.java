@@ -1,16 +1,16 @@
 public class TestReferencia {
     public static void main(String[] args) {
         Cuenta primeracuenta = new Cuenta();
-        primeracuenta.saldo = 200;
+        primeracuenta.depositar(200) ;
 
          Cuenta segundaCuenta = primeracuenta;
-         segundaCuenta.saldo = 100;
+         segundaCuenta.depositar(100) ;
 
-        System.out.println("Saldo primera cuenta " +primeracuenta.saldo);
-        System.out.println("Saldo segunda cuenta " +segundaCuenta.saldo);
+        System.out.println("Saldo primera cuenta " +primeracuenta.getSaldo());
+        System.out.println("Saldo segunda cuenta " +segundaCuenta.getSaldo());
 
-        segundaCuenta.saldo += 400;
-        System.out.println("Saldo de primera cuenta" + primeracuenta.saldo);
+        segundaCuenta.depositar(400) ;
+        System.out.println("Saldo de primera cuenta" + primeracuenta.getSaldo());
 
         System.out.println(primeracuenta);
         System.out.println(segundaCuenta);
